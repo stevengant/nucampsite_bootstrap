@@ -1,4 +1,10 @@
 $(function() {
+    $("#reserveButton").click(function() {
+        $("#reserveModal").modal();
+    });
+    $("#loginButton").click(function() {
+        $("#loginModal").modal();
+    });
     $(".carousel").carousel({interval: 2000});
     $("#carouselButton").click(function(){
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
